@@ -3,7 +3,7 @@ import java.util.*;
 import java.io.*;
 public class coordinate 
 {
-	 public static void main(String[] args) throws CloneNotSupportedException {
+	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);
 	        System.out.println("Enter x-Coordonate");
 	        Float x = sc.nextFloat();
