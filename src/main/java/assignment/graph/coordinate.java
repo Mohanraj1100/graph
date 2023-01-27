@@ -1,7 +1,6 @@
 package assignment.graph;
 import java.util.*;
-import java.io.*;
-public class coordinate 
+public class Coordinate 
 {
 	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);
@@ -10,8 +9,8 @@ public class coordinate
 	        System.out.println("Enter y-coordinate");
 	        Float y = sc.nextFloat();
 
-	        coordinates in = new coordinates(x, y);
-	        coordinates is = in.co();
+	        Coordinates in = new Coordinates(x, y);
+	        Coordinates is = in.co();
 	        System.out.println(is.equals());
 }
 }
