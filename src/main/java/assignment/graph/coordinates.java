@@ -1,10 +1,10 @@
 package assignment.graph;
 
-public class coordinates implements Cloneable {
+public class Coordinates implements cloneable {
     Float x;
     Float y;
 
-    coordinates(Float x, Float y) {
+    Coordinates(Float x, Float y) {
         this.x = x;
         this.y = y;
     }
@@ -13,9 +13,9 @@ public class coordinates implements Cloneable {
         return x.equals(y);
     }
 
-    coordinates co() {
+    Coordinates co() {
     	try{
-    		return (coordinates)super.clone();
+    		return (Coordinates)super.clone();
     		
     	}
     	catch(CloneNotSupportedException e)
