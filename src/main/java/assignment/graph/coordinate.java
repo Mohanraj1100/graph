@@ -1,16 +1,19 @@
 package assignment.graph;
 import java.util.*;
+import java.util.logging*;
+
 public class Coordinate 
 {
 	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);
-	        System.out.println("Enter x-Coordonate");
+		 Logger log = Logger.getLogger("hi");
+	        log.info("Enter x-Coordonate");
 	        Float x = sc.nextFloat();
-	        System.out.println("Enter y-coordinate");
+	        log.info("Enter y-coordinate");
 	        Float y = sc.nextFloat();
 
 	        Coordinates in = new Coordinates(x, y);
 	        Coordinates is = in.co();
-	        System.out.println(is.equals());
+	        log.info(is.equals());
 }
 }
