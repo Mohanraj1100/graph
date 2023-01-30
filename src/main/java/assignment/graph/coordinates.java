@@ -1,8 +1,10 @@
 package assignment.graph;
+import java.util.logging.*;
 
 public class Coordinates implements cloneable {
     Float x;
     Float y;
+    Logger log = Logger.getLogger("hi");
 
     Coordinates(Float x, Float y) {
         this.x = x;
@@ -20,7 +22,7 @@ public class Coordinates implements cloneable {
     	}
     	catch(CloneNotSupportedException e)
     	{
-    		System.out.println("Clowning error");
+    		log.info("Clowning error");
     		return this;
     	}
     }
